@@ -10,12 +10,15 @@ public class Publicacion {
         this.editorial = editorial;
         this.numPag = numPag;
     }
+
     public Color getImpresion(){
         return impresion;
     }
+
     public String getEditorial(){
         return editorial;
     }
+
     public int getNumPag(){
         return numPag;
     }
@@ -23,6 +26,7 @@ public class Publicacion {
     public void darAlta(Publicacion publicacion){
         publicaciones.addHead(publicacion);
     }
+
 //    public void darBaja(Publicacion publicacion){
 //        publicaciones.removeTail(publicacion);
 //    }

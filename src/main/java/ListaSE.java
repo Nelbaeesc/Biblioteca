@@ -37,6 +37,7 @@ public class ListaSE<T> {
     public int getSize() {
         return size;
     }
+
     @Override
     public String toString() {
         return "Lista { " +
@@ -60,6 +61,7 @@ public class ListaSE<T> {
         public void setNext(Nodo<T> next){
             this.next = next;
         }
+
         public T getInfo(){
             return info;
         }

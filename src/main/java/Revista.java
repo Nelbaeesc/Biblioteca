@@ -48,12 +48,15 @@ public class Revista extends Publicacion{
     public String getEditorial() {
         return super.getEditorial();
     }
+
     public String getTematica() {
         return tematica;
     }
+
     public Periocidad getPeriocidad() {
         return periocidad;
     }
+
     public Date getFechaPublicacion() {
         return fechaPublicacion;
     }
