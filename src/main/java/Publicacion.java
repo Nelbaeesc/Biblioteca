@@ -26,4 +26,12 @@ public class Publicacion {
 //    public void darBaja(Publicacion publicacion){
 //        publicaciones.removeTail(publicacion);
 //    }
+
+    @Override
+    public String toString(){
+        return "Publicacion { " + "\n"+
+                "Color de impresion: " + impresion + "\n"+
+                "Editorial: " + editorial + "\n"+
+                "Número de páginas: " + numPag + " }"+ "\n"+"\n";
+    }
 }

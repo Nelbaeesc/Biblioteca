@@ -37,6 +37,13 @@ public class ListaSE<T> {
     public int getSize() {
         return size;
     }
+    @Override
+    public String toString() {
+        return "Lista { " +
+                "size = " + size +
+                ", valores: " + "\n" + head +
+                "}";
+    }
 
     class Nodo<T>{
         private T info;
@@ -58,6 +65,11 @@ public class ListaSE<T> {
         }
         public Nodo<T> getNext(){
             return next;
+        }
+
+        @Override
+        public String toString(){
+            return info + ((next!=null)?next.toString():" ");
         }
     }
 }

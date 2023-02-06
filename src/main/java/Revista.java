@@ -8,11 +8,12 @@ public class Revista extends Publicacion{
     private Date fechaPublicacion;
     private int ejemplares = 1;
 
-    public Revista(Color impresion, String editorial, int numPag, String nombre, String tematica, Periocidad periocidad) {
+    public Revista(Color impresion, String editorial, int numPag, String nombre, String tematica, Periocidad periocidad,Date fechaPublicacion) {
         super(impresion, editorial, numPag);
         this.nombre = nombre;
         this.tematica = tematica;
         this.periocidad = periocidad;
+        this.fechaPublicacion = new Date();
     }
 
     public boolean prestamo(int cantidad, Revista revista){

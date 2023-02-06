@@ -12,6 +12,6 @@ public enum Color {
     }
     @Override
     public String toString(){
-        return "A color o en Blanco y Negro: " + color;
+        return "" + color;
     }
 }
