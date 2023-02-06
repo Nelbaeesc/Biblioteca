@@ -36,6 +36,18 @@ public class Libro extends Publicacion {
         return devuelto;
     }
 
+    public String getAutor() {
+        return autor;
+    }
+
+    public String getTitulo() {
+        return titulo;
+    }
+
+    public String getISBN() {
+        return ISBN;
+    }
+
     @Override
     public String toString(){
         return super.toString() +

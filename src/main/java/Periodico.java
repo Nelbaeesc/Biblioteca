@@ -24,7 +24,6 @@ public class Periodico extends Publicacion {
         }
         return prestado;
     }
-
     public boolean devolucion(int cantidad, Periodico periodico){
         boolean devuelto = false;
 
@@ -36,6 +35,12 @@ public class Periodico extends Publicacion {
             devuelto = true;
         }
         return devuelto;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public Date getDiaPublicacion() {
+        return diaPublicacion;
     }
 
     @Override

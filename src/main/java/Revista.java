@@ -42,6 +42,22 @@ public class Revista extends Publicacion{
         return devuelto;
     }
 
+    public String getNombre() {
+        return nombre;
+    }
+    public String getEditorial() {
+        return super.getEditorial();
+    }
+    public String getTematica() {
+        return tematica;
+    }
+    public Periocidad getPeriocidad() {
+        return periocidad;
+    }
+    public Date getFechaPublicacion() {
+        return fechaPublicacion;
+    }
+
     @Override
     public String toString(){
         return super.toString() +
