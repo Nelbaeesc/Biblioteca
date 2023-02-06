@@ -1,12 +1,9 @@
 import java.util.Date;
 
-public class Prestamo {
+public class Prestamo<T> {
 
     private Date prestado;
     private Date devuelto;
-    private Cliente cliente;
+    private T info;
 
-    public Prestamo(Cliente cliente){
-        this.cliente = cliente;
-    }
 }
