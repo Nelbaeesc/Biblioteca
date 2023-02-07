@@ -7,4 +7,10 @@ public class Prestamo<T> {
     private Date devuelto;
     private T info;
 
+    public Prestamo(LocalDate prestado, Date devuelto, T info) {
+        this.prestado = prestado;
+        this.devuelto = devuelto;
+        this.info = info;
+    }
+
 }
