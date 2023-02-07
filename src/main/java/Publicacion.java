@@ -27,9 +27,9 @@ public class Publicacion {
         publicaciones.addHead(publicacion);
     }
 
-//    public void darBaja(Publicacion publicacion){
-//        publicaciones.removeTail(publicacion);
-//    }
+    public void darBaja(Publicacion publicacion){
+        publicaciones.removeTail(publicacion);
+    }
 
     @Override
     public String toString(){

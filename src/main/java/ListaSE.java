@@ -46,6 +46,10 @@ public class ListaSE<T> {
                 "}";
     }
 
+    public void removeTail(T element) {
+
+    }
+
     class Nodo<T>{
         private T info;
         private Nodo<T> next;

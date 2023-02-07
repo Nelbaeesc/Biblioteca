@@ -13,21 +13,24 @@ public class Libro extends Publicacion {
         this.listaEjemplares = new ListaSE<>();
     }
 
-//    public boolean prestamo(Libro libro, int cantidad){
-//        boolean prestado = false;
-//
-//        if (listaEjemplares.getSize() == 0)
-//            return false;
-//
-//        if (cantidad < listaEjemplares.getSize() && cantidad != 0){
-//            listaEjemplares.removetail();
-//            prestado = true;
-//        }
-//        return prestado;
-//    }
+    public boolean prestamo(Ejemplar ejemplar, int cantidad){
+        boolean prestado = false;
+
+        if (listaEjemplares.getSize() == 0)
+            return false;
+
+        if (cantidad < listaEjemplares.getSize() && cantidad != 0){
+            listaEjemplares.removeTail(ejemplar);
+            prestado = true;
+        }
+        return prestado;
+    }
 
     public boolean devolucion(Ejemplar ejemplar, int cantidad){
         boolean devuelto = false;
+
+        if (listaEjemplares.getSize() == 0)
+            return true;
 
         if (cantidad < listaEjemplares.getSize() && cantidad != 0){
             listaEjemplares.addTail(ejemplar);
