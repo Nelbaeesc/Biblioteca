@@ -8,12 +8,15 @@ public class Ejemplar {
         this.codigo = codigo;
         this.libro = libro;
     }
+
     public int getCodigo(){
         return codigo;
     }
+
     public Libro getLibro() {
         return libro;
     }
+
     public ListaSE<Prestamo> getPrestamos() {
         return prestamos;
     }
