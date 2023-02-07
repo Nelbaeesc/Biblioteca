@@ -31,4 +31,5 @@ public class Ejemplar {
                 "Libro: " + libro + "\n"+
                 "Prestado a: " + cliente;
     }
+
 }
