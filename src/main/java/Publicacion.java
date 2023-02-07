@@ -33,7 +33,7 @@ public class Publicacion {
 
     @Override
     public String toString(){
-        return "Publicacion { " + "\n"+
+        return "\n"+"\n"+"Publicacion { " + "\n"+
                 "Color de impresion: " + impresion + "\n"+
                 "Editorial: " + editorial + "\n"+
                 "Número de páginas: " + numPag + " }"+ "\n"+"\n";

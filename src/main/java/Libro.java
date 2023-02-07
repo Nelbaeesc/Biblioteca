@@ -3,7 +3,7 @@ public class Libro extends Publicacion {
     private String autor;
     private String titulo;
     private String ISBN;
-    private ListaSE<Libro> listaEjemplares;
+    private ListaSE<Ejemplar> listaEjemplares;
 
     public Libro(Color impresion, String editorial, int numPag, String autor, String titulo, String ISBN, ListaSE listaEjemplares) {
         super(impresion, editorial, numPag);
@@ -26,11 +26,11 @@ public class Libro extends Publicacion {
 //        return prestado;
 //    }
 
-    public boolean devolucion(Libro libro, int cantidad){
+    public boolean devolucion(Ejemplar ejemplar, int cantidad){
         boolean devuelto = false;
 
         if (cantidad < listaEjemplares.getSize() && cantidad != 0){
-            listaEjemplares.addTail(libro);
+            listaEjemplares.addTail(ejemplar);
             devuelto = true;
         }
         return devuelto;
